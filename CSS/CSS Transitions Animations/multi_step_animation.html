@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card{
+            width: 200px;
+            padding: 1rem;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+            animation: floatup 900ms cubic-bezier(.2,.9,.3,1) both; /* both applies before & after */
+        }
+        @keyframes floatup{
+            0% {transform: translateY(20px);opacity: 0;}
+            60% {transform: translateY(-6px);opacity: 1;}
+            100% {transform: translateY(0);opacity: 1;}
+        }
+    </style>
+</head>
+<body>
+    <div class="card">Hello</div>
+</body>
+</html>

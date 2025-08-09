@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .panel {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 350ms ease;
+        }
+        .panel.open {
+        max-height: 400px; /* must set a max that fits content max */
+        }
+</style>
+    <script>
+        document.querySelector('.acc-btn').addEventListener('click', () => {
+        document.querySelector('.panel').classList.toggle('open');
+        });
+    </script>
+</head>
+<body>
+    <button class="acc-btn">Open</button>
+    <div class="panel">Content here ...</div>
+</body>
+</html>

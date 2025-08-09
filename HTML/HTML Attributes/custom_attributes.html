@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button data-user-id="12345" data-role="admin">Manage User</button>
+
+    <script>
+        const btn = document.querySelector('button');
+        console.log(btn.dataset.userId); // Outputs: 12345
+        console.log(btn.dataset.role);   // Outputs: admin
+    </script>
+</body>
+</html>

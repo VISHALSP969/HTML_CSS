@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 150px;
+            height: 100px;
+            margin-bottom: 20px;
+            border: 1px solid black;
+        }
+        .box1{
+            background-color: lightblue;
+        }
+        body{
+            background-image: url("bg.jpg");
+        }
+        .box2{
+            background-image: url("bg.jpg");
+            background-repeat: no-repeat;
+        }
+        .box3{
+            background-image: url("bg.jpg");
+            background-position: center top;
+        }
+        .box4{
+            background-image: url("bg.jpg");
+            background-size: cover;
+        }
+        .box5{
+            background: url("bg.jpg") no-repeat center center/ cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="box5"></div>
+</body>
+</html>

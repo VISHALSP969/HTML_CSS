@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #dragg1{
+            width: 100px;
+            height: 100px;
+            background-color: lightgreen;
+        }
+        #dropzone{
+            width: 200px;
+            height: 200px;
+            border: 2px dashed #ccc;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="drag1" draggable="true">Drag me</div>
+    <div id="dropzone">Drop Here</div>
+    <script>
+        const dragItem=document.getElementById("drag1")
+        const dropZone=document.getElementById("dropzone")
+
+        dragItem.addEventListener("dragstart",(e)=>{
+            e.dataTransfer.setData("text",e.target.id)
+        })
+
+        dropZone.addEventListener("dragover",(e)=>{
+            e.preventDefault()
+        })
+
+        dropZone.addEventListener("drop",(e)=>{
+            e.preventDefault()
+            const data=e.dataTransfer.getData("text")
+            const draggedElement=document.getElementById(data)
+            dropZone.appendChild(draggedElement)
+        })
+    </script>
+</body>
+</html>

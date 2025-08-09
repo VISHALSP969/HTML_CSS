@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Accessibility button -->
+    <button aria-label="Close popup" onclick="closePopup()">✖</button>
+
+    <!-- Role Example -->
+    <nav role="navigation" aria-label="Main Menu">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+        </ul>
+    </nav>
+
+    <!-- Live region -->
+    <div aria-live="polite" id="statusMessage">Loading...</div>
+</body>
+</html>
