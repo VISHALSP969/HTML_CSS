@@ -1,0 +1,18 @@
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+    text-transform: capitalize;
+    text-align: center;
+    text-decoration: underline;
+}
+p{
+    line-height: 30px;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    cursor: pointer;
+    font-weight: bolder;
+}
+a{
+    text-decoration: none;
+    color: red;
+}
