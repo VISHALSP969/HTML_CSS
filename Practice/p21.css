@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+}    
+div{
+    height: 100vh;
+    /* background-color: greenyellow; */
+    background-image: url(image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /* background: url(image.png) no-repeat center/cover fixed; */
+}
