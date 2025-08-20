@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    background: gray;
+}
+section *{
+    color: magenta;
+}
+h1{
+    color: red;
+}
+.one{
+    color:blueviolet;
+}
+#two{
+    color: brown;
+}
+h4{
+    color: chartreuse;
+}
+div.text{
+    color: coral;
+}
+div p{
+    color: crimson;
+}
+span>p{
+    color: deepskyblue;
+}
+div+p{
+    color: darkgreen;
+}
+p~ul{
+    color: red;
+}
+a[href="one"]{
+    color: orange;
+}
