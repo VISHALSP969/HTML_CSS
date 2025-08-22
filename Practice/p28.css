@@ -1,0 +1,11 @@
+div{
+    width: 200px;
+    height: 200px;
+    background-color: rgba(0, 0, 255, 0.616);
+    box-shadow: 5px 5px 10px orange;
+}
+h1{
+    /* background-color: black; */
+    color: yellow;
+    text-shadow: 2px 2px 5px red;
+}
