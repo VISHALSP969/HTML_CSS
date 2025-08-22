@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            color: orange;
+            font-size: 2rem;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+            font-style: italic;
+            width: 100px;
+            height: 100px;
+            background-color: teal;
+        }
+        .children{
+            position: relative;
+            left: 100px;
+            width: inherit;
+            height: inherit;
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        Hello
+        <div class="children">World</div>
+    </div>
+</body>
+</html>
