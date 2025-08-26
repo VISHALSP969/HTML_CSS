@@ -1,0 +1,14 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.s{
+    background-color: crimson;
+    width: calc(100px + 100px);
+    height: calc(300px - 100px);
+    margin: calc(20px * 10px);
+    border-radius: 15px calc(15px/10) 4px 2px;
+    padding: calc(200px/10);
+}
