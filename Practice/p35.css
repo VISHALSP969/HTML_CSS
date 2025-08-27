@@ -1,0 +1,12 @@
+header :is(h1,sh2,h3){
+    color: red;
+}
+section :is(h1,h2,h3){
+    color: blue;
+}
+:is(div,main){
+    color: brown;
+}
+:is(nav,article) :is(h1,h3){
+    color: green;
+}
