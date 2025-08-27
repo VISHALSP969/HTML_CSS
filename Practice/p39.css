@@ -1,0 +1,42 @@
+/* DRY-Do not Repeat Yourself */
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+/* BADWAY */
+/* section.one .btn{
+    background: transparent;
+    border-radius: none;
+    margin: 10px;
+    background: rgb(6, 6, 6);
+    padding: 1em 2em;
+    color: white;
+    cursor: pointer;
+}
+section.two .btn{
+    background: transparent;
+    border-radius: none;
+    margin: 10px;
+    background: green;
+    padding: 1em 2em;
+    color: white;
+    cursor: pointer;
+} */
+
+/* BEST PRACTICE */
+.btn{
+    border-radius: none;
+    margin: 10px;
+    padding: 1em 2em;
+    color: white;
+    cursor: pointer;
+    background: rgb(6,6,6);
+}
+/* .btn-primary{
+    background: red;
+} */
+.btn-secondary{
+    background: green;
+}
