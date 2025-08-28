@@ -1,0 +1,25 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container > a{
+    text-decoration: none;
+    border: 2px solid red;
+    padding: 10px;
+    color: brown;
+
+    /* Transition */
+    transition-property: all;
+    transition-duration: 2s;
+    /* transition-timing-function: linear; */
+    /* transition-timing-function: ease; */
+    /* transition-timing-function: ease-in; */
+    /* transition-timing-function: ease-out; */
+    transition-timing-function: cubic-bezier(.05,1.05,.96,-0.05);
+}
+.container > a:hover{
+    background: brown;
+    color: white;
+}
